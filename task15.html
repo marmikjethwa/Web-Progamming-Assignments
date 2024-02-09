@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>task 15</title>
+    <style>
+        textarea {
+            overflow-y: scroll;
+            height: 100px;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            padding-left: 300px;
+        }
+
+        .c1 {
+            flex: 1;
+            border-top-width: 2px;
+            border-bottom-width: 2px;
+            border-left-width: 2px;
+            border-right-width:0px ;
+            border-style: solid;
+            border-color: silver;
+            padding: 10px;
+        }
+
+        .c2 {
+            flex: 2;
+        }
+
+        .p1 {
+            border-width: 2px;
+            border-style: solid;
+            border-color: silver;
+            border-bottom-width:0px ;
+            padding :10px;
+            width: 40%;
+        }
+
+        .p2 {
+            border-width: 2px;
+            border-style: solid;
+            border-color: silver;
+            padding :10px;
+            width: 40%;
+        }
+
+        input[type='radio'] {
+            accent-color: black;
+        }
+
+        input[type='checkbox'] {
+            accent-color: white;
+            color: black;
+            border-color: black;
+            border-width: 0.5px;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div class="c1">
+        <h2>
+            Feedback form
+        </h2>
+        <p>Please fill out this form to help us improve our site</p>
+        <form action="#" method="post">
+            <section class="Naam">
+                <label for="Name">Name:</label>
+                <input type="text" name="Name">
+            </section>
+            <section class="Tippani"></section>
+            <br>
+            <label for="Comments">Comments:</label>
+            <br>
+            <textarea name="Comments" cols="30" rows="10"></textarea>
+            <br>
+            <br>
+        <section class="email">
+            <label for="emailid">E-Mail address:</label>
+            <input type="text">
+            <br>
+            <br>
+        </section>
+        <section class="pasandita">
+            <span>Things you liked:</span>
+            <br>
+            <input type="checkbox" name="sd" value="search engine"><label for="sd">site design</label>
+            <input type="checkbox" name="l1"><label for="l1">links</label>
+            <input type="checkbox" name="eou"><label for="eou">ease of use</label>
+            <input type="checkbox" name="img"><label for="img">Images</label>
+            <input type="checkbox" name="sc"><label for="sc">Source code</label>
+            <br>
+            <br>
+        </section>
+        <section class="whereyoufind">
+            <span>How did you get to our site:</span>
+            <br>
+            <input type="radio" name="se"><label for="se">search engine</label>
+            <input type="radio" name="lfas"><label for="lfas">Links from another site</label>
+            <input type="radio" name="deitel"><label for="deitel">Deitel.com website</label>
+            <input type="radio" name="ref"><label for="ref">Reference in a book</label>
+            <input type="radio" name="other"><label for="other">other</label>
+            <br>
+            <br>
+        </section>
+        <section>
+            <span>Rate our website</span>
+            <select name="Rate">
+                <option value="Amazing">Amazing</option>
+                <option value="okayish">okayish</option>
+                <option value="bad">bad</option>
+            </select>
+            <br>
+            <br>
+        </section>
+        <section>
+            <button>enter</button>
+            <button  type="reset">clear</button>
+        </section>
+    </form>
+    </div>
+
+    <div class="c2">
+        <div class="p1">
+            <h2>My favorite drinking items</h2>
+            <ol type="A">
+                <li>Coffee</li>
+                <li>Tea</li>
+                <li>Milk</li>
+            </ol>
+            <ol type="1">
+                <li>Coffee</li>
+                <li>Tea</li>
+                <li>Milk</li>
+            </ol>
+            <ol type="i">
+                <li>Coffee</li>
+                <li>Tea</li>
+                <li>Milk</li>
+            </ol>
+        </div>
+        <div class="p2">
+            <h2>My favorite drinking items</h2>
+            <ul>
+                <li>Coffee</li>
+                <li>Tea</li>
+                <li>Milk</li>
+            </ul>
+            <ul style="list-style-type: circle;">
+                <li>Coffee</li>
+                <li>Tea</li>
+                <li>Milk</li>
+            </ul>
+            <ul style="list-style-type: square;">
+                <li>Coffee</li>
+                <li>Tea</li>
+                <li>Milk</li>
+            </ul>
+        </div>
+    </div>
+
+</body>
+
+</html>

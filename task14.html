@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>task 14</title>
+    <style>
+        body {
+            background-color: rgb(246, 230, 253);
+            font-family: sans-serif;
+        }
+
+        div {
+            background-color: white;
+            width: 45%;
+            padding: 10px;
+            margin: 15px auto;
+            border: 1px solid silver;
+            border-radius: 8px;
+        }
+
+        .Button {
+            background-color: rgb(246, 230, 253);
+            border: none;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .Buttton {
+            padding: 8px 15px;
+            color: white;
+            background-color: rgb(85, 11, 164);
+            border-radius: 5px;
+            border: none;
+        }
+
+        .req {
+            color: rgb(213, 0, 0);
+        }
+
+        .hdng {
+            border-top-width: 10px;
+            border-top-color: rgb(85, 11, 164);
+        }
+
+        input[type=text] {
+            outline: none;
+            border: none;
+            border-bottom: 1px solid silver;
+            width: 40%;
+            padding: 10px 0px 5px;
+        }
+
+        input[type=radio] {
+            accent-color: rgb(85, 11, 164);
+        }
+
+        .bottom {
+            font-size: x-small;
+        }
+
+        .last {
+            border: none;
+            background-color: rgb(246, 230, 253);
+            color: grey;
+
+        }
+
+        .rst {
+            color: rgb(85, 11, 164);
+            background-color: rgb(246, 230, 253);
+            border: none;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="">
+        <div class="hdng">
+            <h1>Open Letter Maker</h1>
+            <p>all of the submissions to this form will be appended into a table as signature in the style of an open
+                letter.</p>
+            <p class="req">*Required</p>
+            <br>
+        </div>
+        <div class="Name">
+            <h3>Full name <span class="req">*</span></h3>
+            <p>Any text provided here will be used to create a digital signature, including honorifics or degrees</p>
+            <input type="text" placeholder="Your answer">
+            <br>
+        </div>
+        <div>
+            <h3>Department <span class="req">*</span></h3>
+            <input type="text" placeholder="Your answer">
+        </div>
+        <div>
+            <h3>Position <span class="req">*</span></h3>
+            <input type="text" placeholder="Your answer">
+        </div>
+        <div>
+            <h3>Are you willing to share your Information with us? <span class="req">*</span></h3>
+            <input type="radio"> <label for="yes">Yes</label>
+            <br>
+            <input type="radio"> <label for="no">No</label>
+        </div>
+        <div class="Button">
+            <button type="submit" class="Buttton">Submit</button>
+            <button type="reset" class="rst">Clear form</button>
+        </div>
+
+        <div class="last">
+            <p style="font-size: 12px;">Never submit passwords through Google Forms.</p>
+            <p style="font-size: 12px; text-align: center;">This content is neither created nor endorsed by Google. <a
+                    href="https://docs.google.com/forms/u/0/d/e/1FAIpQLSdyJgj9uZnhRxVijpqdM_6hPWx0x34EpOp-n2a14ZwPy4npmg/reportabuse?source=https://docs.google.com/forms/d/e/1FAIpQLSdyJgj9uZnhRxVijpqdM_6hPWx0x34EpOp-n2a14ZwPy4npmg/viewform?usp%3Dsend_form"
+                    style="color: grey;">Report Abuse</a> - <a href="https://policies.google.com/terms "
+                    style="color: grey;">Terms of Service</a> - <a href="https://policies.google.com/privacy"
+                    style="color: grey;">Privacy Policy</a></p>
+            <p style="font-size: large;text-align: center; color: grey;"> <strong>Google</strong> Forms</p>
+        </div>
+    </form>
+</body>
+
+</html>
